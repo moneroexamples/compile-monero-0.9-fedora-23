@@ -1,4 +1,4 @@
-# Compile Monero 0.9 on Fedora 23 x86_64
+# Compile Monero 0.9 on Fedora 23 x64
 The example shows how to compile current github version of [Monero](https://getmonero.org/), as of 5 March 2015,
 on Fedora 23 x86_64.
 
@@ -49,6 +49,10 @@ download the blockchain and synchronize itself with the Monero network. After th
 # launch the Monero wallet
 /opt/bitmonero/simplewallet
 ```
+##Screenshot
+
+
+![Fedora screenshot](https://raw.githubusercontent.com/moneroexamples/compile-monero-0.9-fedora-23/master/img/fedora_screenshot.jpg)
 
 
 ## Other examples
