@@ -1,16 +1,16 @@
-# Compile Monero on Fedora 23 x86_64
-The example shows how to compile current github version of [Monero](https://getmonero.org/), as of 10 Nov 2015,
+# Compile Monero 0.9 on Fedora 23 x86_64
+The example shows how to compile current github version of [Monero](https://getmonero.org/), as of 5 March 2015,
 on Fedora 23 x86_64.
 
 ## Preparation
-Before proceeding to the compilation, the following packages are required:
+Before proceeding with the compilation, the following packages are required:
 
 ```bash
 #install git
 sudo dnf install git
 
 # install dependencies
-sudo dnf install make automake cmake gcc-c++ boost-devel miniupnpc-devel graphviz doxygen unbound-devel libdb-devel
+sudo dnf install make automake cmake gcc-c++ boost-devel miniupnpc-devel graphviz doxygen unbound-devel
 ```
 
 ## Compilation
@@ -36,7 +36,7 @@ as follows:
 ```bash
 # optional
 sudo mkdir /opt/bitmonero
-sudo mv ./build/release/bin/* /opt/bitmonero/
+sudo mv -v ./build/release/bin/* /opt/bitmonero/
 ```
 
 Now we can start the Monero daemon and let it
@@ -49,6 +49,12 @@ download the blockchain and synchronize itself with the Monero network. After th
 # launch the Monero wallet
 /opt/bitmonero/simplewallet
 ```
+
+
+## Other examples
+Other examples can be found on  [github](https://github.com/moneroexamples?tab=repositories).
+Please know that some of the examples/repositotires are not
+finished and may not work as intended.
 
 
 ## How can you help?
