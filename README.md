@@ -26,7 +26,16 @@ cd bitmonero/
 # compile
 # cmake . #  optional for configuration and checking what is available or missing
 make # or make -j number_of_threads, e.g., make -j 2
+
+# alternatively `make release` can be used instead of `make`. This compiles
+# the source code without compiling unique tests which is faster, and can
+# avid problems if there are compilation errors with compiling the tests
 ```
+
+Please not that this is a current version of Monero on github, **not the offical and stable
+release**. Thus, as the development of Monero continues virtually on daily basis, sometimes
+things can break, including the compilation procedure provided. To avoid this, please use the source code and binary files of the offical and stable release of Monero can be downloaded from [here](https://github.com/monero-project/bitmonero/releases/latest).
+
 ## Installation (optional)
 After successful compilation, the Monero binaries should be located in `./bin`
 
